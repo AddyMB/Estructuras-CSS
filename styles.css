@@ -18,7 +18,7 @@ article{
     margin-bottom: 1em;
 }
 
-body > header{
+main > header{
     background-color:rgb(137, 43, 226);
     margin-bottom: 1em;
     width: 100%;
@@ -44,27 +44,25 @@ footer{
     background-color:rgba(226, 43, 205);
     width: 100%;
     text-align: center;
-    clear: both;
 }
 
 /* Version Tablet */
 @media (min-width: 720px) {
     /* Aqui inician los estilos para tablet */
-    body > header{
+    main > header{
         background-color:rgb(137, 43, 226);
-        margin-bottom: 1em;
-        float: left;
-        width: 79%;
     }
     nav{
-        float: left;
+        display:inline-block;
         width: 20%;
         height: 600px;
         margin-right: 1%;
+        background-color:rgb(137, 43, 226);
     }
     main{
-        float: left;
-        width: 79%;
+        display:inline-block;
+        width: 78%;
+        vertical-align: top;
     }
     article{
         background-color:rgb(60, 26, 139);
@@ -81,7 +79,7 @@ footer{
 /* Version Laptop */
 @media (min-width: 1024px) {
     /* Aqui inician los estilos para Laptor */
-    body > header{
+    main > header{
         background-color:rgb(144, 226, 43);
     }
     nav{
@@ -92,10 +90,6 @@ footer{
     }
     main > article > header{
         background-color:rgb(114, 139, 26);
-    }
-    main{
-        float: left;
-        width: 79%;
     }
     footer{
         background-color:rgb(226, 205, 43);
