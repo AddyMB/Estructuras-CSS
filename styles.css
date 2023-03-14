@@ -21,27 +21,23 @@ article{
 body > header{
     background-color:rgb(137, 43, 226);
     margin-bottom: 1em;
-    float: left;
-    width: 79%;
+    width: 100%;
 
 }
 
 nav{
     background-color: indigo;
     padding: 1em;
-    float: left;
-    width: 20%;
-    height: 600px;
-    margin-right: 1%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1em;
 }
 
 main > article > header{
     background-color:rgba(128, 26, 139);
-
 }
 main{
-    float: left;
-    width: 79%;
+    width: 100%;
 }
 
 footer{
@@ -49,4 +45,60 @@ footer{
     width: 100%;
     text-align: center;
     clear: both;
+}
+
+/* Version Tablet */
+@media (min-width: 720px) {
+    /* Aqui inician los estilos para tablet */
+    body > header{
+        background-color:rgb(137, 43, 226);
+        margin-bottom: 1em;
+        float: left;
+        width: 79%;
+    }
+    nav{
+        float: left;
+        width: 20%;
+        height: 600px;
+        margin-right: 1%;
+    }
+    main{
+        float: left;
+        width: 79%;
+    }
+    article{
+        background-color:rgb(60, 26, 139);
+    }
+    main > article > header{
+        background-color:rgb(26, 26, 139);
+    }
+    footer{
+        background-color:rgb(43, 95, 226);
+    }
+    /* Aqui terminan los estilos para tablet */
+}
+
+/* Version Laptop */
+@media (min-width: 1024px) {
+    /* Aqui inician los estilos para Laptor */
+    body > header{
+        background-color:rgb(144, 226, 43);
+    }
+    nav{
+        background-color:rgb(43, 226, 116);
+    }
+    article{
+        background-color:rgb(139, 139, 26);
+    }
+    main > article > header{
+        background-color:rgb(114, 139, 26);
+    }
+    main{
+        float: left;
+        width: 79%;
+    }
+    footer{
+        background-color:rgb(226, 205, 43);
+    }
+    /* Aqui terminan los estilos para Laptop */
 }
