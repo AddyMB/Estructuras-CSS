@@ -44,6 +44,7 @@ footer{
     background-color:rgba(226, 43, 205);
     width: 100%;
     text-align: center;
+    clear: both;
 }
 
 /* Version Tablet */
@@ -52,9 +53,17 @@ footer{
     main > header{
         background-color:rgb(137, 43, 226);
     }
+    .contenedor{
+        display: flex;
+        gap: 1em;
+        flex-flow: row wrap;
+        flex: 1 0 100%;
+        align-items: flex-start;
+    }
     nav{
         display:inline-block;
         width: 20%;
+        flex: 100;
         height: 600px;
         margin-right: 1%;
         background-color:rgb(137, 43, 226);
@@ -63,6 +72,7 @@ footer{
         display:inline-block;
         width: 78%;
         vertical-align: top;
+        flex:400;
     }
     article{
         background-color:rgb(60, 26, 139);
@@ -79,6 +89,9 @@ footer{
 /* Version Laptop */
 @media (min-width: 1024px) {
     /* Aqui inician los estilos para Laptor */
+    .contenedor{
+        flex-direction: row-reverse;
+    }
     main > header{
         background-color:rgb(144, 226, 43);
     }
